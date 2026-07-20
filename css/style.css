@@ -5,7 +5,6 @@ box-sizing:border-box;
 }
 
 :root{
-
 --bg:#090909;
 --bg2:#121212;
 
@@ -17,285 +16,180 @@ box-sizing:border-box;
 --transition:.35s;
 
 --max:1300px;
-
 }
 
 html{
-
 scroll-behavior:smooth;
-
 }
 
 body{
-
 background:var(--bg);
-
 font-family:Poppins,sans-serif;
-
 color:var(--text);
-
 }
 
 .container{
-
 width:90%;
 max-width:var(--max);
 margin:auto;
-
 }
 
 header{
-
 position:fixed;
-
 top:0;
-
 left:0;
-
 width:100%;
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 padding:20px 60px;
-
 z-index:1000;
-
 transition:.4s;
-
 }
 
 header.scrolled{
-
 background:rgba(0,0,0,.85);
-
 backdrop-filter:blur(12px);
-
 }
 
 .logo img{
-
 height:55px;
-
 }
 
 nav{
-
 display:flex;
-
 gap:35px;
-
 }
 
 nav a{
-
 color:white;
-
 text-decoration:none;
-
 font-size:15px;
-
 transition:.3s;
-
 font-family:Montserrat;
-
 }
 
 nav a:hover{
-
 opacity:.6;
-
 }
 
 .hero{
-
 height:100vh;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 text-align:center;
-
 }
 
 .hero-content{
-
 animation:fade 1.4s;
-
 }
 
 .hero-logo{
-
-width:280px;
-
+width:100%;
 margin-bottom:30px;
-
 }
 
 .hero h1{
-
 font-family:Montserrat;
-
 font-size:65px;
-
 letter-spacing:8px;
-
 }
 
 .hero h2{
-
 margin-top:10px;
-
 font-weight:300;
-
 font-size:28px;
-
 color:#bbb;
-
 }
 
 .hero p{
-
 margin-top:35px;
-
 line-height:35px;
-
 font-size:20px;
-
 color:#cfcfcf;
-
 }
 
 .btn{
-
 display:inline-block;
-
 margin-top:50px;
-
 padding:18px 45px;
-
 border:1px solid white;
-
 color:white;
-
 text-decoration:none;
-
 transition:.4s;
-
 }
 
 .btn:hover{
-
 background:white;
-
 color:black;
-
 }
 
 .intro{
-
 padding:140px 0;
-
 text-align:center;
-
 background:#101010;
-
 }
 
 .intro h2{
-
 font-size:42px;
-
 font-family:Montserrat;
-
 margin-bottom:30px;
-
 }
 
 .intro p{
-
 color:#b8b8b8;
-
 font-size:20px;
-
 max-width:700px;
-
 margin:auto;
-
 line-height:35px;
-
 }
 
 footer{
-
 padding:40px;
-
 text-align:center;
-
 border-top:1px solid #222;
-
 color:#777;
-
 }
 
 @keyframes fade{
 
 from{
-
 opacity:0;
-
 transform:translateY(50px);
-
 }
 
 to{
-
 opacity:1;
-
 transform:none;
-
 }
 
 }
+
+
+
+
 
 /*--------------------------*/
 /* PAGE TITLE */
 /*--------------------------*/
 
 .page-title{
-
 padding-top:170px;
-
 padding-bottom:80px;
-
 text-align:center;
-
 }
 
 .page-title h1{
-
 font-size:55px;
-
 font-family:Montserrat;
-
 letter-spacing:4px;
-
 margin-bottom:20px;
-
 }
 
 .page-title p{
-
 color:#999;
-
 font-size:20px;
-
 }
 
 
@@ -304,204 +198,122 @@ font-size:20px;
 /*--------------------------*/
 
 .portfolio{
-
 width:92%;
-
 max-width:1500px;
-
 margin:auto;
-
 padding-bottom:120px;
-
 }
 
 #portfolio-grid{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
-
 gap:35px;
-
 }
 
 .evento{
-
 text-decoration:none;
-
 color:white;
-
 background:#111;
-
 border-radius:16px;
-
 overflow:hidden;
-
 transition:.4s;
-
 border:1px solid #1d1d1d;
-
 }
 
 .evento:hover{
-
 transform:translateY(-8px);
-
 }
 
 .imagen{
-
 overflow:hidden;
-
 height:300px;
-
 }
 
 .imagen img{
-
 width:100%;
-
 height:100%;
-
 object-fit:cover;
-
 transition:.6s;
-
 }
 
 .evento:hover img{
-
 transform:scale(1.08);
-
 }
 
 .info{
-
 padding:28px;
-
 }
 
 .info h2{
-
 font-family:Montserrat;
-
 margin-bottom:15px;
-
 font-size:28px;
-
 }
 
 .info p{
-
 color:#b5b5b5;
-
 margin-bottom:8px;
-
 }
 
 .info span{
-
 display:inline-block;
-
 margin-top:20px;
-
 font-size:14px;
-
 letter-spacing:2px;
-
 color:white;
-
 border:1px solid #444;
-
 padding:8px 18px;
-
 border-radius:50px;
-
 }
 
 
 #heroEvento{
-
 height:100vh;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 background-size:cover;
-
 background-position:center;
-
 text-align:center;
-
 }
 
 .heroEventoContenido h1{
-
 font-size:70px;
-
 font-family:Montserrat;
-
 letter-spacing:6px;
-
 }
 
 .heroEventoContenido p{
-
 margin-top:15px;
-
 font-size:22px;
-
 color:#d0d0d0;
-
 }
 
 .galeria{
-
 width:95%;
-
 max-width:1700px;
-
 margin:100px auto;
-
 }
 
 #contenedorFotos{
-
 columns:4 300px;
-
 column-gap:18px;
-
 }
 
 .foto{
-
 margin-bottom:18px;
-
 break-inside:avoid;
-
 overflow:hidden;
-
 border-radius:12px;
-
 }
 
 .foto img{
-
 width:100%;
-
 display:block;
-
 transition:.45s;
-
 cursor:pointer;
-
 }
 
 .foto img:hover{
-
 transform:scale(1.03);
-
 }
