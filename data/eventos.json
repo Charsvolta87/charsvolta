@@ -10,27 +10,22 @@
 
         "categoria":"Conciertos",
 
+        "descripcion":"Cobertura completa del show realizado en el Teatro Flores.",
+
         "cantidad":32,
 
-        "portada":"imagenes/cadena-perpetua/portada.webp"
+        "portada":"imagenes/cadena-perpetua/portada.webp",
 
-    },
+        "imagenes":[
 
-    {
+            "01.webp",
+            "02.webp",
+            "03.webp",
+            "04.webp",
+            "05.webp",
+            "06.webp"
 
-        "id":"attaque77",
-
-        "titulo":"Attaque 77",
-
-        "fecha":"12 Junio 2026",
-
-        "lugar":"Teatro Vorterix",
-
-        "categoria":"Conciertos",
-
-        "cantidad":41,
-
-        "portada":"imagenes/attaque77/portada.webp"
+        ]
 
     }
 
