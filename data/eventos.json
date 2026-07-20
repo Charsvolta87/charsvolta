@@ -1,0 +1,37 @@
+[
+    {
+        "id":"cadena-perpetua",
+
+        "titulo":"Cadena Perpetua",
+
+        "fecha":"18 Mayo 2026",
+
+        "lugar":"Teatro Flores",
+
+        "categoria":"Conciertos",
+
+        "cantidad":32,
+
+        "portada":"imagenes/cadena-perpetua/portada.webp"
+
+    },
+
+    {
+
+        "id":"attaque77",
+
+        "titulo":"Attaque 77",
+
+        "fecha":"12 Junio 2026",
+
+        "lugar":"Teatro Vorterix",
+
+        "categoria":"Conciertos",
+
+        "cantidad":41,
+
+        "portada":"imagenes/attaque77/portada.webp"
+
+    }
+
+]
