@@ -45,6 +45,7 @@ align-items:center;
 padding:20px 60px;
 z-index:1000;
 transition:.4s;
+margin-top: -60px;
 }
 
 header.scrolled{
@@ -88,7 +89,7 @@ animation:fade 1.4s;
 .hero-logo{
 width:100%;
 margin-bottom:30px;
-margin-top: 7px;
+margin-top: 40px;
 }
 
 .hero h1{
