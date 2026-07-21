@@ -1,22 +1,14 @@
 [
     {
-        "id":"cadena-perpetua",
-
-        "titulo":"Cadena Perpetua",
-
-        "fecha":"18 Mayo 2026",
-
-        "lugar":"Teatro Flores",
-
+        "id":"la_ultima-la_pecera",
+        "titulo":"La Última y Nos Vamos",
+        "fecha":"17 Julio 2026",
+        "lugar":"La Pecera",
         "categoria":"Conciertos",
-
-        "descripcion":"Cobertura completa del show realizado en el Teatro Flores.",
-
+        "descripcion":"Cobertura completa del show realizado en La Pecera Restobar.",
         "cantidad":32,
-
         "portada":"imagenes/cadena-perpetua/portada.webp",
-
-        "imagenes":[
+        "imagenes/la_pecera_17_07":[
 
             "01.webp",
             "02.webp",
