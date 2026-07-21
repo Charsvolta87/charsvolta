@@ -148,19 +148,32 @@ display:block;
 }
 
 .btn{
-display:inline-block;
-margin-top:0px;
-padding:18px 45px;
-border:1px solid white;
-color:white;
-text-decoration:none;
-transition:.4s;
-margin-left: 200px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:18px 55px;
+    color:white;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:50px;
+    font-family:Montserrat;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transition:.35s;
+    background:transparent;
 }
 
 .btn:hover{
 background:white;
 color:black;
+}
+
+.hero-action{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#090909;
+    padding:70px 0;
 }
 
 .intro{
