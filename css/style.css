@@ -383,3 +383,57 @@ cursor:pointer;
 .foto img:hover{
 transform:scale(1.03);
 }
+
+.about{
+
+padding:140px 8%;
+
+background:#111;
+
+}
+
+.about-container{
+
+display:grid;
+
+grid-template-columns:420px 1fr;
+
+gap:80px;
+
+align-items:center;
+
+max-width:1400px;
+
+margin:auto;
+
+}
+
+.about-photo img{
+
+width:100%;
+
+border-radius:18px;
+
+}
+
+.about-info h2{
+
+font-size:48px;
+
+font-family:Montserrat;
+
+margin-bottom:35px;
+
+}
+
+.about-info p{
+
+font-size:18px;
+
+line-height:34px;
+
+color:#bdbdbd;
+
+margin-bottom:20px;
+
+}
