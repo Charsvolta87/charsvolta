@@ -6,8 +6,23 @@ flex-direction:column;
 gap:20px;
 }
 
+.hero{
+    background-image:url("../imagenes/hero2.png");
+    background-position:center top;
+}
+
 .hero h1{
-font-size:42px;
+    font-size:42px;
+}
+
+.hero h2{
+    font-size:20px;
+}
+
+.hero p{
+    font-size:16px;
+    line-height:30px;
+    padding:0 25px;
 }
 
 .hero-logo{
