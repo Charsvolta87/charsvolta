@@ -415,3 +415,35 @@ line-height:34px;
 color:#bdbdbd;
 margin-bottom:20px;
 }
+
+.contacto{
+
+    padding:140px 20px;
+
+    text-align:center;
+
+    background:#090909;
+
+}
+
+.contacto h2{
+
+    font-size:48px;
+
+    font-family:Montserrat;
+
+    margin-bottom:20px;
+
+}
+
+.contacto p{
+
+    color:#a8a8a8;
+
+    max-width:650px;
+
+    margin:0 auto 60px;
+
+    line-height:32px;
+
+}
