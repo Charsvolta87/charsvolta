@@ -442,8 +442,23 @@ margin-bottom:20px;
     gap:40px;
 }
 
+.social-links a{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:1px solid #2d2d2d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:#74ACDF;
+    font-size:30px;
+    transition:.35s;
+}
+
 .social-links a:hover{
     transform:translateY(-8px);
     border-color:white;
     box-shadow:0 0 30px rgba(255,255,255,.12);
+     color:white;
 }
