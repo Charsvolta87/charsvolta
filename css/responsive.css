@@ -29,6 +29,10 @@ gap:20px;
 width:100%;
 }
 
+.btn{
+    margin-left: 50px;
+}
+
 nav{
 gap:18px;
 flex-wrap:wrap;
