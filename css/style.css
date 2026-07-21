@@ -149,12 +149,13 @@ display:block;
 
 .btn{
 display:inline-block;
-margin-top:50px;
+margin-top:0px;
 padding:18px 45px;
 border:1px solid white;
 color:white;
 text-decoration:none;
 transition:.4s;
+margin-left: 100px;
 }
 
 .btn:hover{
