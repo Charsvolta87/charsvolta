@@ -1,53 +1,35 @@
 @media(max-width:900px){
 
 header{
-
 padding:20px;
-
 flex-direction:column;
-
 gap:20px;
-
 }
 
 .hero h1{
-
 font-size:42px;
-
 }
 
 .hero-logo{
-
-width:180px;
-
+width:100px;
 }
 
 nav{
-
 gap:18px;
-
 flex-wrap:wrap;
-
 justify-content:center;
-
 }
 
 .intro{
-
 padding:90px 20px;
-
 }
 
 .intro h2{
-
 font-size:30px;
-
 }
 
 .intro p{
-
 font-size:17px;
-
 }
 
 }
