@@ -80,6 +80,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+margin-top: 90px;
 }
 
 .hero-content{
@@ -89,7 +90,6 @@ animation:fade 1.4s;
 .hero-logo{
 width:100%;
 margin-bottom:30px;
-margin-top: 70px;
 }
 
 .hero h1{
