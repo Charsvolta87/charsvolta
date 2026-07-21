@@ -189,6 +189,7 @@ border-top:1px solid #222;
 color:#777;
 }
 
+/*
 @keyframes arrow{
 0%{
 opacity:0;
@@ -201,7 +202,8 @@ opacity:1;
 opacity:0;
 transform:translateY(18px) rotate(45deg);
 }
-}
+*/
+
 @keyframes fade{
 
 from{
