@@ -417,33 +417,42 @@ margin-bottom:20px;
 }
 
 .contacto{
-
     padding:140px 20px;
-
     text-align:center;
-
     background:#090909;
-
 }
 
 .contacto h2{
-
     font-size:48px;
-
     font-family:Montserrat;
-
     margin-bottom:20px;
-
 }
 
 .contacto p{
-
     color:#a8a8a8;
-
     max-width:650px;
-
     margin:0 auto 60px;
-
     line-height:32px;
+}
+
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.social-links a:hover{
+
+    transform:translateY(-8px);
+
+    border-color:white;
+
+    box-shadow:0 0 30px rgba(255,255,255,.12);
 
 }
