@@ -436,23 +436,14 @@ margin-bottom:20px;
 }
 
 .social-links{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     gap:40px;
-
 }
 
 .social-links a:hover{
-
     transform:translateY(-8px);
-
     border-color:white;
-
     box-shadow:0 0 30px rgba(255,255,255,.12);
-
 }
