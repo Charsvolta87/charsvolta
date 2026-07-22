@@ -35,42 +35,25 @@ user-select:none;
 }
 
 .lb-btn{
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(10px);
-    border:none;
-    color:white;
-    font-size:26px;
-    cursor:pointer;
-    transition:.35s;
+position:absolute;
+background:none;
+border:none;
+color:white;
+font-size:48px;
+cursor:pointer;
+z-index:20;
+opacity:.7;
+transition:.3s;
 }
 
 .lb-btn:hover{
-    background:rgba(116,172,223,.22);
-    transform:translateY(-50%) scale(1.08);
+opacity:1;
 }
 
 .cerrar{
-    position:absolute;
-    top:30px;
-    right:35px;
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    border:none;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(12px);
-    color:white;
-    font-size:28px;
-    cursor:pointer;
-    transition:.35s;
-}
-
-.cerrar:hover{
-    background:rgba(116,172,223,.25);
-    transform:rotate(90deg);
+top:25px;
+right:35px;
+font-size:55px;
 }
 
 .anterior{
@@ -86,14 +69,14 @@ transform:translateY(-50%);
 }
 
 .lightbox-footer{
-    position:absolute;
-    bottom:35px;
-    left:50%;
-    transform:translateX(-50%);
-    padding:14px 24px;
-    border-radius:40px;
-    background:rgba(255,255,255,.06);
-    backdrop-filter:blur(12px);
-    display:flex;
-    gap:40px;
+position:absolute;
+bottom:30px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:50px;
+color:white;
+font-family:Montserrat;
+letter-spacing:2px;
+z-index:20;
 }
