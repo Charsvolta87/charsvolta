@@ -1,14 +1,14 @@
 fetch("data/eventos.json")
 
-.then(res=>res.json())
+.then(r=>r.json())
 
 .then(eventos=>{
 
-const grid=document.getElementById("portfolio-grid");
+let html="";
 
 eventos.forEach(evento=>{
 
-grid.innerHTML+=`
+html+=`
 
 <a class="evento"
 
@@ -16,9 +16,7 @@ href="evento.html?id=${evento.id}">
 
 <div class="imagen">
 
-<img src="${evento.portada}"
-
-alt="${evento.titulo}">
+<img src="imagenes/${evento.carpeta}/${evento.portada}">
 
 </div>
 
@@ -30,7 +28,11 @@ alt="${evento.titulo}">
 
 <p>${evento.fecha}</p>
 
-<span>${evento.cantidad} fotografías</span>
+<span>
+
+${evento.cantidad} fotografías
+
+</span>
 
 </div>
 
@@ -39,5 +41,7 @@ alt="${evento.titulo}">
 `;
 
 });
+
+document.getElementById("portfolio-grid").innerHTML=html;
 
 });
