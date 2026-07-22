@@ -31,24 +31,35 @@ document.getElementById("heroEvento").innerHTML=`
 
 `;
 
-let html="";
+let html = "";
 
-evento.imagenes.forEach(imagen=>{
+const rutas = [];
 
-html+=`
+evento.imagenes.forEach((nombre, i) => {
 
-<div class="foto">
+    const ruta = `imagenes/${evento.carpeta}/${nombre}`;
 
-<img
-src="imagenes/${evento.carpeta}/${imagen}"
-loading="lazy">
+    rutas.push(ruta);
 
-</div>
-
-`;
+    html += `
+        <div class="foto">
+            <img
+                src="${ruta}"
+                loading="lazy"
+                data-index="${i}">
+        </div>
+    `;
 
 });
 
-document.getElementById("contenedorFotos").innerHTML=html;
+document.getElementById("contenedorFotos").innerHTML = html;
+
+document.querySelectorAll(".foto img").forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        abrirLightbox(rutas, Number(img.dataset.index));
+
+    });
 
 });

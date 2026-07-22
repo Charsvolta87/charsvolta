@@ -10,11 +10,11 @@
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/lightbox.css">
 
 <link rel="icon" type="image/png" href="imagenes/logo2.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -60,6 +60,23 @@
         <span id="zoom">100%</span>
     </div>
 </div>
+
+<div id="lightbox" class="lightbox">
+    <div id="overlay"></div>
+    <button id="cerrar" class="lb-btn cerrar">&times;</button>
+    <button id="anterior" class="lb-btn anterior">&#10094;</button>
+    <button id="siguiente" class="lb-btn siguiente">&#10095;</button>
+    <div class="lightbox-contenedor">
+        <img id="imagenLightbox">
+    </div>
+
+    <div class="lightbox-footer">
+        <span id="contador"></span>
+        <span id="zoomTexto">100%</span>
+    </div>
+</div>
+
+<script src="js/lightbox.js"></script>
 
 <script src="js/main.js"></script>
 <script src="js/evento.js"></script>
