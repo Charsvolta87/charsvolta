@@ -7,8 +7,9 @@
         "categoria":"Conciertos",
         "descripcion":"Cobertura completa del show realizado en La Pecera Restobar.",
         "cantidad":73,
-        "portada":"imagenes/la_pecera_17_07/IMG_4962.jpg",
-        "imagenes/la_pecera_17_07":[
+        "carpeta":"la_pecera_17_07",
+        "portada":"IMG_4962.jpg",
+        "imagenes":[
 
             "IMG_4962.jpg",
             "IMG_4967.jpg",
