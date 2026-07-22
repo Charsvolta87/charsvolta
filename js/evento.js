@@ -15,7 +15,7 @@ if(!evento)return;
 document.title=evento.titulo+" | Chars Volta";
 
 document.getElementById("heroEvento").style.backgroundImage=
-`linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.8)),url(${evento.portada})`;
+`linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.8)),url(imagenes/${evento.carpeta}/${evento.portada})`;
 
 document.getElementById("heroEvento").innerHTML=`
 
@@ -40,7 +40,7 @@ html+=`
 <div class="foto">
 
 <img
-src="imagenes/${evento.id}/${imagen}"
+src="imagenes/${evento.carpeta}/${imagen}"
 loading="lazy">
 
 </div>
