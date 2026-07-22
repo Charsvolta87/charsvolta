@@ -63,3 +63,5 @@ document.querySelectorAll(".foto img").forEach(img => {
     });
 
 });
+
+});
