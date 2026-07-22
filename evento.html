@@ -23,46 +23,45 @@
 <body>
 <header>
 
-<div class="logo">
-
+    <div class="logo">
 <a href="index.html">
 <img src="imagenes/logo2.png">
 </a>
-
 </div>
 
 <nav>
-
 <a href="index.html">Inicio</a>
-
 <a href="portfolio.html">Portfolio</a>
-
 <a href="sobre-mi.html">Sobre mí</a>
-
 <a href="contacto.html">Contacto</a>
-
 </nav>
 
 </header>
 
-
 <section id="heroEvento">
-
 </section>
 
 
 <section class="galeria">
-
 <div id="contenedorFotos">
-
 </div>
-
 </section>
 
+<div id="lightbox" class="lightbox oculto">
+    <button id="cerrar">✕</button>
+    <button id="anterior">❮</button>
+    <button id="siguiente">❯</button>
+    <div class="lightbox-contenedor">
+        <img id="imagenLightbox">
+    </div>
+
+    <div class="lightbox-info">
+        <span id="contador"></span>
+        <span id="zoom">100%</span>
+    </div>
+</div>
+
 <script src="js/main.js"></script>
-
 <script src="js/evento.js"></script>
-
 </body>
-
 </html>
