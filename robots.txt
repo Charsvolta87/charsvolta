@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charsvolta87.github.io/charsvolta/sitemap.xml
