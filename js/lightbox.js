@@ -112,3 +112,60 @@ btnAnterior.click();
 if(e.key=="ArrowRight")
 btnSiguiente.click();
 });
+
+/* ===== SOPORTE TÁCTIL (CELULAR) ===== */
+let touchInicioX = 0;
+let touchInicioY = 0;
+let distanciaInicialPinch = 0;
+let zoomInicialPinch = 1;
+let modoPinch = false;
+
+function distanciaEntreDedos(touches){
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx*dx + dy*dy);
+}
+
+imagen.addEventListener("touchstart", (e) => {
+    if (e.touches.length === 2) {
+        // Empieza gesto de pinch (dos dedos)
+        modoPinch = true;
+        distanciaInicialPinch = distanciaEntreDedos(e.touches);
+        zoomInicialPinch = zoom;
+    } else if (e.touches.length === 1) {
+        modoPinch = false;
+        touchInicioX = e.touches[0].clientX - posX;
+        touchInicioY = e.touches[0].clientY - posY;
+    }
+}, { passive: true });
+
+imagen.addEventListener("touchmove", (e) => {
+    if (modoPinch && e.touches.length === 2) {
+        e.preventDefault();
+        const nuevaDistancia = distanciaEntreDedos(e.touches);
+        zoom = Math.max(1, Math.min(5, zoomInicialPinch * (nuevaDistancia / distanciaInicialPinch)));
+        actualizarTransform();
+    } else if (e.touches.length === 1 && zoom > 1) {
+        // Un dedo con zoom activo: arrastrar la imagen
+        e.preventDefault();
+        posX = e.touches[0].clientX - touchInicioX;
+        posY = e.touches[0].clientY - touchInicioY;
+        actualizarTransform();
+    }
+}, { passive: false });
+
+imagen.addEventListener("touchend", (e) => {
+    if (zoom <= 1 && !modoPinch) {
+        // Sin zoom: el desplazamiento horizontal se interpreta como swipe para navegar
+        const deltaX = (e.changedTouches[0].clientX - touchInicioX) - posX;
+        const UMBRAL_SWIPE = 50;
+        if (deltaX > UMBRAL_SWIPE) {
+            btnAnterior.click();
+        } else if (deltaX < -UMBRAL_SWIPE) {
+            btnSiguiente.click();
+        }
+    }
+    if (e.touches.length === 0) {
+        modoPinch = false;
+    }
+});
