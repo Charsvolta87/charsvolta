@@ -1,0 +1,18 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales
+*.temp
+*.tmp
+.temp
+
+# Configuración de editores
+.vscode/
+.idea/
+*.swp
+
+# Backups
+*.bak
+*~
