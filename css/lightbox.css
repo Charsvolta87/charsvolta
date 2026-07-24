@@ -38,7 +38,7 @@ user-select:none;
 position:absolute;
 background:none;
 border:none;
-color:white;
+color:rgba(255, 255, 255, 0.459);
 font-size:48px;
 cursor:pointer;
 z-index:20;
