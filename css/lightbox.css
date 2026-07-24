@@ -42,7 +42,7 @@ color:white;
 font-size:48px;
 cursor:pointer;
 z-index:20;
-opacity:5;
+opacity:1;
 transition:.3s;
 }
 
